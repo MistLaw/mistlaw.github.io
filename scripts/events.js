@@ -32,17 +32,17 @@ document.addEventListener("visibilitychange", () => {
   }
 });
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    window.scrollTo(0, 0);
-    ScrollTrigger.refresh();
-    //Its hacky but the scroll needs to be reset or the image shrinks upon reload
-    //This is a none issue on non live server renders
-    //But i dont like seeing it
-    firstTrigger.scroll(0);
-    secondTrigger.scroll(0);
-    thirdTrigger.scroll(0);
-    gsap.set("#gameboySlide div", { autoAlpha: 0 })
-    // gsap.set("#gameboySlide p", { autoAlpha: 0 })
-  }, 50); // small delay to run after Live Server forces scroll
-});
+// window.addEventListener("load", () => {
+//   setTimeout(() => {
+//     window.scrollTo(0, 0);
+//     ScrollTrigger.refresh();
+//     //Its hacky but the scroll needs to be reset or the image shrinks upon reload
+//     //This is a none issue on non live server renders
+//     //But i dont like seeing it
+//     firstTrigger.scroll(0);
+//     secondTrigger.scroll(0);
+//     thirdTrigger.scroll(0);
+//     gsap.set("#gameboySlide div", { autoAlpha: 0 })
+//     // gsap.set("#gameboySlide p", { autoAlpha: 0 })
+//   }, 50); // small delay to run after Live Server forces scroll
+// });
