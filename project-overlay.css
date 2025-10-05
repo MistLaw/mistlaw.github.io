@@ -1,0 +1,107 @@
+/* Background gif */
+.bg {
+  position: fixed;
+  /* background-color: black; */
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  object-position: center;
+}
+
+.bg-slide img{
+  /* background-color: transparent; */
+  z-index: 10;
+  /* transform: translateX(-30%) translateY(0%) scale(0.4); */
+}
+
+
+/* Project overlay */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 142, 142);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --mask-radius: 0%;
+  -webkit-mask: radial-gradient(circle at 50% 50%, transparent var(--mask-radius), black var(--mask-radius));
+  mask: radial-gradient(circle at 50% 50%, transparent var(--mask-radius), black var(--mask-radius));
+  z-index: 1;
+}
+
+/* Transparent text showing the gif behind it */
+.masked-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  scale: 1;
+  font-size: 12vw;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  line-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+
+  /* Background relative to viewport */
+  background: url('./img/projects/gameboy/Tetris.webp');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+
+/* .bg h1 {
+  text-align: center;
+  position: absolute;
+  width: 50%;
+  opacity: 0;
+  top: 32vh;
+  transform: translateY(-50%);
+  right: 5%;
+  color: white;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.bg p {
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  top: 50vh;
+  transform: translateY(-50%);
+  right: 6%;
+  width: 50%;
+  color: white;
+  font-size: clamp(0.5rem, 2vw, 1.5rem);
+  z-index: 10;
+  pointer-events: none;
+} */
+
+.bg div{
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  top: 50vh;
+  transform: translateY(-50%);
+  right: 6%;
+  width: 50%;
+  color: white;
+  font-size: clamp(0.5rem, 2vw, 1.5rem);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.project-heading{
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}

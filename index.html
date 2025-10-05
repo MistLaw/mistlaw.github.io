@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="project-overlay.css">
+</head>
+
+<body>
+  <canvas id="particleCanvas"></canvas>
+  <div class="typing-container">
+    <span id="typed-text"></span><span class="cursor">|</span>
+  </div>
+  <div class="gradient-seperator"></div>
+  <div class="about-me">
+    <canvas id="tesseractCanvas"></canvas>
+    <div class="about-text">
+      <h1 class="about-me-title">About Me</h1>
+      <p class="main-text">
+        I’m a self taught programmer with a deep passion for learning and exploring new technologies.
+        I love diving into challenging problems, experimenting with creative ideas,
+        and building interactive projects that showcase both technical skill and curiosity.
+        I enjoy bringing ideas to life through code,
+        whether it’s creating dynamic visualizations,
+        designing simulations, or experimenting with new programming concepts.
+        Every project is an opportunity to learn, grow,
+        and push the boundaries of what I can build.
+      </p>
+    </div>
+    <div class="skills-logos">
+      <img src="logos/javascript.png" alt="JavaScript">
+      <img src="logos/html.png" alt="JavaScript">
+      <img src="logos/css.png" alt="JavaScript">
+      <img src="logos/python.png" alt="Python">
+      <img src="logos/csharp.png" alt="C#">
+      <img src="logos/c++.svg" alt="C++">
+      <img src="logos/java.png" alt="JAVA">
+    </div>
+  </div>
+
+
+  <section class="next-slide" style="position: absolute;">
+    <div id="gameboySlide" class="bg">
+      <img id="gameboyVideo" src="./img/projects/gameboy/Tetris.webp" alt="" srcset="">
+      <div>
+        <h1 class="project-heading">Gameboy Emulator</h1>
+        <p>
+          Developed a fully functional Game Boy emulator capable of running
+          classic titles.
+          Implemented CPU, memory, and PPU (the Game Boy’s rudimentary GPU) emulation from scratch.
+          Features include support for ROM loading and real-time input handling.
+          This project demonstrates strong understanding of low-level systems programming,
+          hardware emulation, and optimization techniques.
+        </p>
+      </div>
+    </div>
+
+    <div id="rayTracerSlide" class="bg bg-slide">
+      <img id="rayTracerVideo" src="./img/projects/gameboy/Tetris.webp" alt="" srcset="">
+      <div>
+        <h1 class="project-heading">Ray Tracer</h1>
+        <p>
+          Developed a fully functional Game Boy emulator capable of running
+          classic titles.
+          Implemented CPU, memory, and PPU (the Game Boy’s rudimentary GPU) emulation from scratch.
+          Features include support for ROM loading and real-time input handling.
+          This project demonstrates strong understanding of low-level systems programming,
+          hardware emulation, and optimization techniques.
+        </p>
+      </div>
+    </div>
+
+    <div id="boidSlide" class="bg bg-slide">
+      <img id="boidVideo" src="./img/projects/boids/Fish.webp" alt="" srcset="">
+      <div>
+        <h1 class="project-heading">3D Boids</h1>
+        <p>
+          This project explores emergent group behavior using the boids algorithm in Unity.
+          Each fish follows a small set of local rules: alignment, cohesion, and separation,
+          without any central control. From these simple interactions,
+          complex and natural-looking schools of fish emerge.
+          The 3D models are free assets, but all movement logic and behavior systems
+          were programmed from scratch to study how coordinated motion can arise from simple autonomous agents.
+        </p>
+      </div>
+    </div>
+
+    <div id="rayMarcherSlide" class="bg bg-slide">
+      <img id="rayMarcherVideo" src="./img/projects/ray-marcher/MandelBulb.webp" alt="" srcset="">
+      <div>
+        <h1 class="project-heading">Ray Marcher</h1>
+        <p>
+          This project implements a real-time ray marcher written in HLSL,
+          designed for efficient rendering of signed distance fields.
+          The system visualizes a Mandelbulb fractal by evaluating an existing SDF function
+          while smoothly animating its structure through changes in fractal power.
+          Although the SDF definition itself was not written by me, all ray marching logic,
+          shading, and animation were implemented from scratch.
+        </p>
+      </div>
+    </div>
+
+    <div id="mathsSlide" class="bg bg-slide">
+      <img id="mathsVideo" src="./img/projects/maths-demo/Cardiod.webp" alt="" srcset="">
+      <div>
+        <h1 class="project-heading">Random Math Demos</h1>
+        <p>
+          When I encounter fascinating natural or mathematical patterns,
+          I recreate and study them through code driven visuals.
+          For instance, the cardioid shapes seen on coffee cups can be modeled using light
+          reflection geometry and modular arithmetic,
+          resulting in captivating animations. Similarly,
+          my Julia set project visualizes 2D slices of a 4D fractal,
+          revealing the hidden structure behind its intricate forms.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="overlay">
+      <div id="overlayVideo" class="masked-text">My Projects</div>
+    </div>
+  </section>
+  <div style="height: 200vh;"></div>
+  <div style="height: 100vh;"></div>
+  <div style="height: 200vh;"></div>
+  <div style="height: 500vh;"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="./scripts/project-videos.js"></script>
+  <script src="./scripts/digital_rain.js"></script>
+  <script src="./scripts/tesseract.js"></script>
+  <script src="./scripts/animated-text.js"></script>
+  <script src="./scripts/animated-slides.js"></script>
+  <script src="./scripts/events.js"></script>
+</body>
+
+</html>
