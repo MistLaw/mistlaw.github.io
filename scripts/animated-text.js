@@ -64,14 +64,14 @@ const slideTween = gsap.to(".next-slide", {
 
 ScrollTrigger.create({
   trigger: ".about-me",
-  start: "bottom bottom",
+  start: "top top",
   end: "+=100%",
   scrub: true,
   onUpdate: (self) => {
   //this bit of code toggles if the slide works based on a boolean
   //probably not a good idea to limit users like this?
   // if (tess.animationDone) {
-    let buffer = 0.2; // 20% of scroll is just "dead zone"
+    let buffer = 0.4; // 40% of scroll is just "dead zone"
     let adjProgress = (self.progress - buffer) / (1 - buffer);
 
     // clamp to 0–1 so it doesn’t go negative
