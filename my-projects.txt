@@ -1,9 +1,0 @@
-<svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <mask id="mask" x="0" y="0" width="100" height="50">
-      <rect x="0" y="0" width="100" height="50" fill="#fff"/>
-      <text text-anchor="middle" x="50" y="18" dy="1" fill="#000">MY PROJECTS</text>
-    </mask>
-  </defs>
-  <rect x="0" y="0" width="100" height="50" mask="url(#mask)" fill="blue"/>    
-</svg>
