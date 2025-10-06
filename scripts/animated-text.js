@@ -128,25 +128,25 @@ const firstTrigger = ScrollTrigger.create({
 });
 
 //IT WORKS DONT TOUCH IT!!
-const shrinkImageTween = gsap.from("#gameboySlide img", {
-  width: "100vw",
-  height: "100vh",
-  ease: "power1.out",
-  paused: true
-});
+// const shrinkImageTween = gsap.from("#gameboySlide img", {
+//   width: "100vw",
+//   height: "100vh",
+//   ease: "power1.out",
+//   paused: true
+// });
 
-// Force the image to start at the 'from' state immediately
-gsap.set("#gameboySlide img", { width: "100vw", height: "100vh" });
+// // Force the image to start at the 'from' state immediately
+// gsap.set("#gameboySlide img", { width: "100vw", height: "100vh" });
 
-const secondTrigger = ScrollTrigger.create({
-  trigger: ".about-me",
-  start: firstTrigger.end,
-  end: "+=50%",
-  scrub: true,
-  onUpdate: (self) => {
-    let buffer = 0.1;
-    let adjProgress = (self.progress - buffer) / (1 - buffer);
-    adjProgress = gsap.utils.clamp(0, 1, adjProgress);
-    shrinkImageTween.progress(adjProgress);
-  }
-});
+// const secondTrigger = ScrollTrigger.create({
+//   trigger: ".about-me",
+//   start: firstTrigger.end,
+//   end: "+=50%",
+//   scrub: true,
+//   onUpdate: (self) => {
+//     let buffer = 0.1;
+//     let adjProgress = (self.progress - buffer) / (1 - buffer);
+//     adjProgress = gsap.utils.clamp(0, 1, adjProgress);
+//     shrinkImageTween.progress(adjProgress);
+//   }
+// });
