@@ -128,11 +128,15 @@ const firstTrigger = ScrollTrigger.create({
 });
 
 //IT WORKS DONT TOUCH IT!!
-const shrinkImageTween = gsap.to("#gameboySlide img", {
-  scale: 0.40,
-  paused: true,
-  ease: "none",
+const shrinkImageTween = gsap.from("#gameboySlide img", {
+  width: "100vw",
+  height: "100vh",
+  ease: "power1.out",
+  paused: true
 });
+
+// Force the image to start at the 'from' state immediately
+gsap.set("#gameboySlide img", { width: "100vw", height: "100vh" });
 
 const secondTrigger = ScrollTrigger.create({
   trigger: ".about-me",

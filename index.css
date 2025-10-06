@@ -71,13 +71,6 @@
   line-height: 3vh;
 }
 
-section {
-  height: 100vh;        /* each section fills screen */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .next-slide {
   position: absolute;   /* take it out of normal flow so it overlaps */
   background-color: rgb(0, 0, 0);
@@ -94,11 +87,6 @@ section {
   overflow: hidden;     /* mask for each word */
   vertical-align: bottom;
   margin-right: 0.25em; /* space between words */
-}
-
-.word {
-  display: inline-block;
-  transform: translateY(100%); /* start hidden below */
 }
 
 .skills-logos {
