@@ -1,6 +1,6 @@
 let slides = ["#rayTracerSlide", "#boidSlide", "#rayMarcherSlide", "#mathsSlide"];
 let prevSlide = "#gameboySlide";
-let prevTrigger = secondTrigger;
+let prevTrigger = firstTrigger;
 let animation_duration = 0.4;
 
 slides.forEach(slide => {
