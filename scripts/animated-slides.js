@@ -52,6 +52,6 @@ slides.forEach(slide => {
     }
   });
 
-  prevTrigger = { end: triggerEnd + window.innerHeight * 1.2 };
+  prevTrigger = { end: triggerEnd + window.innerHeight};
   prevSlide = slide;
 });
