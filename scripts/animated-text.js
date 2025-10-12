@@ -126,11 +126,9 @@ const firstTrigger = ScrollTrigger.create({
     overlayTween.progress(adjProgress); // update the single tween
 
     // Toggle pointer-events
-    if (adjProgress >= 0.6) {
-      document.querySelector(".overlay").style.pointerEvents = "none";
-    } else {
-      document.querySelector(".overlay").style.pointerEvents = "auto";
-    }
+    gsap.set(".overlay", {
+      pointerEvents: adjProgress >= 0.6 ? "none" : "auto"
+    });
   }
 });
 
