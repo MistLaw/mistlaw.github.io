@@ -17,7 +17,7 @@ slides.forEach(slide => {
   ScrollTrigger.create({
     trigger: slide,
     start: triggerEnd,
-    end: "+=100%",
+    end: "+=" + window.innerHeight,
     onUpdate: self => {
       // self.progress goes from 0 to 1 as you scroll
       tl.progress(self.progress);

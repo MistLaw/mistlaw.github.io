@@ -47,7 +47,7 @@
   .bg-slide {
     flex-direction: column;
     padding: 2rem;
-    height: auto;
+    height: 100vh;
   }
 
   .bg-slide img {
