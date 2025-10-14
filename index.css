@@ -1,6 +1,6 @@
 .typing-container {
   position: absolute;
-  top: 50%;
+  top: 50vh;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: monospace;
@@ -176,6 +176,11 @@ h1{
 @keyframes blink {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
+}
+
+.full-wrapper{
+  position: relative;
+  overflow-x: hidden;
 }
 
 body {
