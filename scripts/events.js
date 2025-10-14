@@ -17,6 +17,10 @@ function animate() {
 
 animate();
 
+window.addEventListener('load', () => {
+  ScrollTrigger.refresh(true);
+});
+
 // Handle resize
 window.addEventListener('resize', () => {
   tesseract_canvas.width = document.documentElement.clientWidth;
