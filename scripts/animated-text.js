@@ -1,4 +1,4 @@
-const text = "Hello, I'm Akif Ali, a programmer!";
+const text = "Hello, I'm Akif Ali, a Programmer!";
 const typedText = document.getElementById('typed-text');
 
 let chars = text.split('');
@@ -71,7 +71,7 @@ ScrollTrigger.create({
   //this bit of code toggles if the slide works based on a boolean
   //probably not a good idea to limit users like this?
   // if (tess.animationDone) {
-    let buffer = 0.4; // 40% of scroll is just "dead zone"
+    let buffer = 0.1; // 40% of scroll is just "dead zone"
     let adjProgress = (self.progress - buffer) / (1 - buffer);
 
     // clamp to 0–1 so it doesn’t go negative

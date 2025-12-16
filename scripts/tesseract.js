@@ -17,7 +17,7 @@ class Tesseract{
     this.animationDone = false;
     this.size = size;
     this.vertices = [];
-    this.color = "#00b7ffff";
+    this.color = "#00b7ff51";
     for (let x of [-1,1])
     for (let y of [-1,1])
     for (let z of [-1,1])
@@ -115,7 +115,7 @@ class Tesseract{
       ctx.lineTo((this.position.x)+ (p2.x * this.tempSize), (this.position.y) - (p2.y  * this.tempSize));
     }
     ctx.strokeStyle = this.color;
-    ctx.lineWidth = 1.5;
+    ctx.lineWidth = 3;
     ctx.stroke();
   }
 

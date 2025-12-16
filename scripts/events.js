@@ -2,7 +2,8 @@
 function animate() {
   rain_ctx.fillStyle = 'rgba(0,0,0,0.15)';
   rain_ctx.fillRect(0, 0, width, height);
-  tesseract_ctx.fillStyle = '#0b0e11';
+  // tesseract_ctx.fillStyle = '#0b0e11';
+  tesseract_ctx.fillStyle = '#000000';
   tesseract_ctx.fillRect(0, 0, width, height);
 
   particles.forEach(p => {
