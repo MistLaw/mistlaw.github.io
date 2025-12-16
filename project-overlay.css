@@ -60,6 +60,15 @@
   z-index: 1;
 }
 
+.overlay-bottom-text{
+  color: rgba(255, 255, 255, 0.673);
+  font-size: 1rem;
+  position:absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%);
+}
+
 .project-heading{
   font-size: clamp(1.5rem, 3vw, 3rem);
 }

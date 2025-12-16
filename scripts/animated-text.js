@@ -71,7 +71,7 @@ ScrollTrigger.create({
   //this bit of code toggles if the slide works based on a boolean
   //probably not a good idea to limit users like this?
   // if (tess.animationDone) {
-    let buffer = 0.1; // 40% of scroll is just "dead zone"
+    let buffer = 0.1; // 10% of scroll is just "dead zone"
     let adjProgress = (self.progress - buffer) / (1 - buffer);
 
     // clamp to 0–1 so it doesn’t go negative
@@ -117,10 +117,10 @@ const overlayTween = gsap.to(".overlay", {
 const firstTrigger = ScrollTrigger.create({
   trigger: ".about-me",
   start: "bottom+=100% bottom", // adjust for vertical scroll
-  end: "+=200%",       // scroll distance for scrub
+  end: "+=100%",       // scroll distance for scrub
   scrub: true,
   onUpdate: (self) => {
-    let buffer = 0.1;
+    let buffer = 0.0;
     let adjProgress = (self.progress - buffer) / (1 - buffer);
     adjProgress = gsap.utils.clamp(0, 1, adjProgress);
     overlayTween.progress(adjProgress); // update the single tween
