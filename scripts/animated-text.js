@@ -120,7 +120,7 @@ const firstTrigger = ScrollTrigger.create({
   end: "+=100%",       // scroll distance for scrub
   scrub: true,
   onUpdate: (self) => {
-    let buffer = 0.0;
+    let buffer = 0.1;
     let adjProgress = (self.progress - buffer) / (1 - buffer);
     adjProgress = gsap.utils.clamp(0, 1, adjProgress);
     overlayTween.progress(adjProgress); // update the single tween
